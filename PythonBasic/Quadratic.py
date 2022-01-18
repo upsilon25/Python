@@ -1,8 +1,9 @@
 import re
 
-t= "1  his  12 + 5is+ 6r  aining"
+t= "1x2+14x+48"
 t_up= t.replace(' ','')
-list = t_up.split('+')
+print(t_up)
+list = re.split('-|\+',t_up)
 print(list)
 print(len(list))
 
@@ -27,9 +28,9 @@ cz=int(cx[0])
 print(ax," ",bx," ",cx)
 print(az," ",bz," ",cz)
 
-b24ac= ((bz**2)-4*az*cz)**(0.5)
+b24ac= ((bz**2)-(4*az*cz))**(0.5)
 print(b24ac)
 nom1=((-1*bz)+(b24ac))
 nom2=((-1*bz)-b24ac)
-print(nom1//(2*az))
-print(nom2//(2*az))
+print(nom1/(2*az))
+print(nom2/(2*az))
