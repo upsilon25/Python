@@ -1,3 +1,5 @@
+3
+4
 
 def protien( num ):
     if (num <1): 
